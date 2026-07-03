@@ -9,7 +9,7 @@ interface Props {
 const { lang, path } = Astro.props;
 const t = useTranslations(lang);
 
-const site = Astro.site ?? new URL('https://fuck-claude.vercel.app');
+const site = Astro.site ?? new URL('https://fc.kevintao1024.com');
 const canonical = new URL(path, site).href;
 const enUrl = new URL('/', site).href;
 const zhUrl = new URL('/zh/', site).href;
@@ -294,6 +294,21 @@ const jsonLd = {
         height: 26px;
         width: auto;
       }
+      .sponsor__mark {
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 92px;
+        height: 28px;
+        padding: 0 10px;
+        border: 1px solid var(--border-strong);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--text);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
       .sponsor__text {
         flex: 1;
         margin: 0;
@@ -338,6 +353,11 @@ const jsonLd = {
           gap: 3px 10px;
         }
         .sponsor__logo {
+          grid-row: 1;
+          grid-column: 1;
+          justify-self: start;
+        }
+        .sponsor__mark {
           grid-row: 1;
           grid-column: 1;
           justify-self: start;
