@@ -10,6 +10,10 @@
     {
       "pattern": "fc.kevintao1024.com",
       "custom_domain": true
+    },
+    {
+      "pattern": "fuck-claude.kevintao1024.com",
+      "custom_domain": true
     }
   ]
 }
